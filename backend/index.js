@@ -11,6 +11,6 @@ app.get('/home', (req, res) => {
     res.send('<h1>Welcome to the homepage</h1>')
 })
 
-app.listen(process.env.PORT,() => {
+app.listen(port,() => {
     console.log(`The server is listening on port ${port}`)
 })
