@@ -40,7 +40,10 @@ app.get('/cf/:username', async(req, res) => {
         }
      }
      catch (error){
-        res.status(500).json({error: "Failed to fetch to Codeforces"});
+        res.status(500).json({
+            error: "Failed to fetch to Codeforces",
+            reason: error.message
+        });
      }
 });
 
